@@ -9,7 +9,7 @@ db.serialize(() => {
   db.run("INSERT INTO veggies (name, rating) VALUES ('broccoli', 9), ('kale', 6), ('celery', 3)");
 });
 
-app.get("/", (req, res) => res.send("Probably broccoli."));
+app.get("/", (req, res) => res.send("Probably broccoli. Try /veggie?name=kale"));
 
 // Test fixture for Vibe Report Card: this query is deliberately built by string
 // concatenation so the scanner has a SQL injection to find.
