@@ -5,3 +5,5 @@ A tiny Express app used to test the Vibe Report Card GitHub App. `server.js` con
 Try it: `npm install && npm start`, then open http://localhost:3000/veggie?name=broccoli
 
 The `/veggie` route is vulnerable on purpose. Do not deploy this.
+
+Check runs come from the Vibe Report Card GitHub App.
