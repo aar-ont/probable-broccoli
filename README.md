@@ -7,3 +7,5 @@ Try it: `npm install && npm start`, then open http://localhost:3000/veggie?name=
 The `/veggie` route is vulnerable on purpose. Do not deploy this.
 
 Check runs come from the Vibe Report Card GitHub App.
+
+Fix pull requests: when the app knows how to fix a problem, it opens a PR.
