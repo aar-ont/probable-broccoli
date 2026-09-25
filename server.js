@@ -14,7 +14,7 @@ app.get("/", (req, res) => res.send("Probably broccoli. Try /veggie?name=kale"))
 // Test fixture for Vibe Report Card: this query is deliberately built by string
 // concatenation so the scanner has a SQL injection to find.
 app.get("/veggie", (req, res) => {
-  db.all("SELECT * FROM veggies WHERE name = '" + req.query.name + "'", (err, rows) => {
+  db.all("SELECT * FROM veggies WHERE name = ?", [req.query.name], (err, rows) => {
     if (err) return res.status(500).send("query failed");
     res.json(rows);
   });
