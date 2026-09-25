@@ -1,6 +1,6 @@
 # probable-broccoli
 
-A tiny Express app used to test the Vibe Report Card GitHub App. `server.js` contains a deliberate SQL injection so the check run has something to report.
+A tiny Express app used to test the Vibe Report Card GitHub App: grades, checks, and fix pull requests.
 
 Try it: `npm install && npm start`, then open http://localhost:3000/veggie?name=broccoli
 
